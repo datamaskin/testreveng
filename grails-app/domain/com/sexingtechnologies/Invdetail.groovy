@@ -10,22 +10,35 @@ class Invdetail {
 	String gender
 	String tank
 	String section
-	Long canister
+	Long   canister
 	String bulkLocation
 	String expCode
-	Date collDate
+	Date   collDate
 	String collCode
 	String strawColor
 	String concentration
 	String container
 	String pkg
-	Long qtyCo
-	Long qtyOh
+	Long   qtyCo
+	Long   qtyOh
 	String lastUser
-	Date lastUpdt
+	Date   lastUpdt
 
-	static mapping = {
+	static mapping = { // camelCased DB column names mapped to class properties.
 		version false
+        bullCode        column: 'BullCode'
+        bullName        column: 'BullName'
+        ownCode         column: 'OwnCode'
+        ownName         column: 'OwnName'
+        bulkLocation    column: 'BulkLocation'
+        expCode         column: 'ExpCode'
+        collDate        column: 'CollDate'
+        collCode        column: 'CollCode'
+        strawColor      column: 'StrawColor'
+        qtyCo           column: 'QtyCo'
+        qtyOh           column: 'QtyOh'
+        lastUser        column: 'LastUser'
+        lastUpdt        column: 'LastUpdt'
 	}
 
 	static constraints = {
